@@ -48,33 +48,44 @@
 #booleano2 = input("Ingrese un numero de 6 a 10: ")
 #booleano3 = input("Ingrese un numero de 11 a 15: ")
 
-def loquesea():
-    booleano1 = int(input("Ingrese un numero de 1 a 5: "))
-    if booleano1 in range(1,5+1):
-        return True
+edad = 18
+estudiante = False
+adulto = True
+def ingreso():
+    edad_1 = int(input("Ingrese su edad"))
+    if edad_1 >= 18 or estudiante == False or adulto == True:
+        print("Puede pasar")
     else:
-        return False
+        print("No puede ingresar")
+    ingreso
+
+# def loquesea():
+#     booleano1 = (input("Ingrese un numero de 1 a 5: "))
+#     if booleano1 in range(1,5+1):
+#         return True
+#     else:
+#         return False
     
-def loquesea2():
-    booleano2 = int(input("Ingrese un numero de 6 a 10: "))
-    if booleano2 in range(6,10+1):
-        return True
-    else:
-        return False
-def loquesea3():
-    booleano3 = int(input("Ingrese un numero de 11 a 15: "))
-    if booleano3 in range(11,15+1):
-        return True
-    else:
-        return False
-def prueba():
-    if loquesea()+loquesea2() >= 1 :
-        return True
-    else:
-        return False
-def prueba2():
-    if prueba()+loquesea3() >=1:
-        return True
-    else:
-        return False
-print(return prueba2)
+# def loquesea2():
+#     booleano2 = int(input("Ingrese un numero de 6 a 10: "))
+#     if booleano2 in range(6,10+1):
+#         return True
+#     else:
+#         return False
+# def loquesea3():
+#     booleano3 = int(input("Ingrese un numero de 11 a 15: "))
+#     if booleano3 in range(11,15+1):
+#         return True
+#     else:
+#         return False
+# def prueba():
+#     if loquesea()+loquesea2() >= 1 :
+#         return True
+#     else:
+#         return False
+# def prueba2():
+#     if prueba()+loquesea3() >=1:
+#         return True
+#     else:
+#         return False
+# print(prueba2)
