@@ -1,0 +1,16 @@
+Nivel Básico (1–7)
+
+1. Declaración simple: Crea tres variables (nombre, edad, altura) y asígnales valores adecuados.
+Imprime sus valores.
+
+2. Identificar tipo: Declara variables de tipo entero, flotante, cadena y booleano. Usa type() para
+mostrar su tipo.
+3. Concatenación: Declara dos variables de texto con tu nombre y apellido. Combínalas en una
+sola variable e imprímela.
+4. Operaciones numéricas: Declara dos variables numéricas y muestra la suma, resta,
+multiplicación y división.
+5. Booleanos: Crea dos variables booleanas y usa operadores
+
+
+
+

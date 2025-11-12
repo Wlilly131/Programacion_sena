@@ -1,0 +1,19 @@
+#1. Declara una variable llamada edad y asígnale un número entero. Luego imprímela.
+
+#2. Declara dos números enteros (a y b) y muestra su suma usando print.
+
+#3. Declara dos números y muestra su resta.
+
+#4. Muestra la multiplicación de dos números enteros.
+
+#5. Muestra el resultado de dividir dos números enteros (usa división entera con //).
+
+#6. Calcula el resto (módulo) de dividir 10 entre 3 e imprímelo.
+
+#7. Declara tres números y muestra su suma total.
+
+#8. Declara una variable ancho y otra alto, luego imprime el área de un rectángulo (ancho * alto).
+
+#9. Declara tu año de nacimiento y el año actual, luego imprime tu edad.
+
+#10. Declara un número entero y muestra el doble, el triple y el cuadrado de ese número.
