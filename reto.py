@@ -5,7 +5,6 @@ def prueba():
 
 prueba()
 #----------FORMULARIO----------
-print("Formulario de usuarios")
 def pruebas():
     nombre_uno = input("Ingrese su nombre número uno: ")
     nombre_dos = input("Ingrese su nombre número dos: ")
@@ -13,3 +12,5 @@ def pruebas():
     apellido_dos = input("Ingrese su apellido número dos: ")
 pruebas()
 #cedula = int(input("Ingrese su numero de cédula (sin decimales ni espacios): "))
+
+print("Esta es a una prueba para el repositorio GitHub", pruebas,"Adicional este es otro para validarlo")
