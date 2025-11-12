@@ -5,6 +5,8 @@ def prueba():
 
 prueba()
 #----------FORMULARIO----------
+print("FORMULARIO PARA PRUEBAS DE GIT")
+print("Prueba 2")
 def pruebas():
     nombre_uno = input("Ingrese su nombre número uno: ")
     nombre_dos = input("Ingrese su nombre número dos: ")
