@@ -8,6 +8,10 @@
 # playlist = ["Canción A", "Canción B", "Canción C", "Canción D"]
 # # Si n = 2 → ["Canción C", "Canción D", "Canción A", "Canción B"]
 
+playlist = ["Canción 1", "Canción 2", "Canción 3", "Canción 4"]
+numero = int(input("Ingrese el numero que quiere rotar la playlist: "))
+
+
 # 2. Filtrar Ingredientes Prohibidos
 # Un chef tiene una lista de ingredientes para una receta.
 # Escribe un programa que pida al usuario los ingredientes que no quiere (pueden ser varios, separados
