@@ -10,7 +10,9 @@
 
 playlist = ["Canción 1", "Canción 2", "Canción 3", "Canción 4"]
 numero = int(input("Ingrese el numero que quiere rotar la playlist: "))
-
+numero = numero % len(playlist)
+lista_rotada = playlist[-numero:] + playlist[:-numero]
+print("La lista rotada queda así: ", lista_rotada)
 
 # 2. Filtrar Ingredientes Prohibidos
 # Un chef tiene una lista de ingredientes para una receta.
@@ -21,6 +23,13 @@ numero = int(input("Ingrese el numero que quiere rotar la playlist: "))
 # # Ejemplo
 # ingredientes = ["harina", "huevo", "leche", "azúcar", "chocolate"]
 # # Prohibidos: huevo, leche → ["harina", "azúcar", "chocolate"]
+
+ingredientes = ["harina", "huevo", "leche", "azúcar", "chocolate"]
+print("De los siguientes ingredientes escoga cuales no desea, separados por coma: " , ingredientes)
+no_deseados = input("Ingredientes no deseados: ")
+no_deseados = ingredientes.index(no_deseados)
+del ingredientes[int(no_deseados)]
+print("La lista de ingredientes sin los no deseados es: ", )
 
 # 3. Codificador por Saltos
 # Crea un programa que reciba una lista de letras y un número salto.
