@@ -48,16 +48,16 @@
 #booleano2 = input("Ingrese un numero de 6 a 10: ")
 #booleano3 = input("Ingrese un numero de 11 a 15: ")
 
-edad = 18
-estudiante = False
-adulto = True
-def ingreso():
-    edad_1 = int(input("Ingrese su edad"))
-    if edad_1 >= 18 or estudiante == False or adulto == True:
-        print("Puede pasar")
-    else:
-        print("No puede ingresar")
-    ingreso
+# edad = 18
+# estudiante = False
+# adulto = True
+# def ingreso():
+#     edad_1 = int(input("Ingrese su edad"))
+#     if edad_1 >= 18 or estudiante == False or adulto == True:
+#         print("Puede pasar")
+#     else:
+#         print("No puede ingresar")
+#     ingreso
 
 # def loquesea():
 #     booleano1 = (input("Ingrese un numero de 1 a 5: "))
@@ -89,3 +89,6 @@ def ingreso():
 #     else:
 #         return False
 # print(prueba2)
+
+if v % 2 == 0:
+print("OK")

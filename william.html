@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuestionario Interactivo de Python</title>
+<style>
+    /* Fondo inspirado en los colores de Python */
+    body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: linear-gradient(135deg, #3776AB 40%, #FFD43B 100%);
+        margin: 0;
+        padding: 30px;
+        color: #222;
+    }
+
+    h1 {
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    form {
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 10px;
+        max-width: 850px;
+        margin: 30px auto;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .pregunta {
+        margin-bottom: 20px;
+        border-left: 4px solid #3776AB;
+        padding-left: 10px;
+    }
+
+    .pregunta h3 {
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+
+    button {
+        background-color: #FFD43B;
+        color: #222;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        margin: 25px auto 10px;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #FFC300;
+        transform: scale(1.05);
+    }
+
+    #resultado {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 25px;
+        color: #fff;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        color: white;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+
+<h1>🧠 Cuestionario Interactivo: Fundamentos de Python 🐍</h1>
+
+<form id="cuestionario">
+    <div class="pregunta">
+        <h3>1. ¿Cuál de las siguientes NO es una palabra reservada en Python?</h3>
+        <label><input type="radio" name="p1" value="A"> A. True</label>
+        <label><input type="radio" name="p1" value="B"> B. then</label>
+        <label><input type="radio" name="p1" value="C"> C. if</label>
+        <label><input type="radio" name="p1" value="D"> D. and</label>
+    </div>
+
+    <div class="pregunta">
+        <h3>2. ¿Qué ocurre cuando hay un "syntax error" en un programa Python?</h3>
+        <label><input type="radio" name="p2" value="A"> A. El programa se ejecuta sin problemas, pero mostrará un aviso.</label>
+        <label><input type="radio" name="p2" value="B"> B. Se ignoran las líneas con error.</label>
+        <label><input type="radio" name="p2" value="C"> C. El programa se detiene y muestra un error de sintaxis.</label>
+        <label><input type="radio" name="p2" value="D"> D. Depende del error.</label>
+    </div>
+
+    <div class="pregunta">
+        <h3>3. ¿Cómo se declara una variable en Python?</h3>
+        <label><input type="radio" name="p3" value="A"> A. var x;</label>
+        <label><input type="radio" name="p3" value="B"> B. x = variable()</label>
+        <label><input type="radio" name="p3" value="C"> C. x = 10</label>
+        <label><input type="radio" name="p3" value="D"> D. x: int = 10</label>
+    </div>
+
+    <div class="pregunta">
+        <h3>4. ¿Cómo se definen los valores de tipo string en Python?</h3>
+        <label><input type="radio" name="p4" value="A"> A. Mediante comillas triples '''</label>
+        <label><input type="radio" name="p4" value="B"> B. Mediante comillas dobles "</label>
+        <label><input type="radio" name="p4" value="C"> C. Mediante comillas simples '</label>
+        <label><input type="radio" name="p4" value="D"> D. Todas las anteriores son correctas.</label>
+    </div>
+
+    <div class="pregunta">
+        <h3>5. ¿Qué afirmación es incorrecta respecto a la sentencia else?</h3>
+        <label><input type="radio" name="p5" value="A"> A. Se puede incluir una condición acompañando al else.</label>
+        <label><input type="radio" name="p5" value="B"> B. Va precedido de sentencias if o elif.</label>
+        <label><input type="radio" name="p5" value="C"> C. Se ejecuta si no se cumple ninguna condición previa.</label>
+        <label><input type="radio" name="p5" value="D"> D. Solo puede haber un else por sentencia.</label>
+    </div>
+
+    <div class="pregunta">
+        <h3>6. ¿Qué resultado produce la siguiente secuencia? (a = 5; a > 3 or a < 2)</h3>
+        <label><input type="radio" name="p6" value="A"> A. True</label>
+        <label><input type="radio" name="p6" value="B"> B. Syntax Error</label>
+        <label><input type="radio" name="p6" value="C"> C. False</label>
+        <label><input type="radio" name="p6" value="D"> D. None</label>
+    </div>
+
+    <div class="pregunta">
+        <h3>7. ¿Se pueden convertir valores de tipo float a int?</h3>
+        <label><input type="radio" name="p7" value="A"> A. No, no se puede.</label>
+        <label><input type="radio" name="p7" value="B"> B. Sí, se redondean los decimales.</label>
+        <label><input type="radio" name="p7" value="C"> C. Sí, si no contiene decimales.</label>
+        <label><input type="radio" name="p7" value="D"> D. Sí, pero se truncan los decimales.</label>
+    </div>
+
+    <div class="pregunta">
+        <h3>8. ¿Qué resultado podemos esperar del siguiente bloque de código?</h3>
+        <p><code>if v % 2 == 0:<br>&nbsp;&nbsp;print("OK")</code></p>
+        <label><input type="radio" name="p8" value="A"> A. Syntax Error. No se puede definir un if sin else.</label>
+        <label><input type="radio" name="p8" value="B"> B. Depende del valor de v, si es par imprime "OK".</label>
+        <label><input type="radio" name="p8" value="C"> C. Nada, nunca se ejecutará.</label>
+        <label><input type="radio" name="p8" value="D"> D. Syntax Error. No existe el operador %.</label>
+    </div>
+
+    <div class="pregunta">
+        <h3>9. ¿Qué debemos tener en cuenta al definir variables en Python?</h3>
+        <label><input type="radio" name="p9" value="A"> A. No pueden empezar por un número ni tener espacios.</label>
+        <label><input type="radio" name="p9" value="B"> B. No pueden tener nombres iguales a palabras reservadas.</label>
+        <label><input type="radio" name="p9" value="C"> C. A y B son correctas.</label>
+        <label><input type="radio" name="p9" value="D"> D. Python no distingue mayúsculas de minúsculas.</label>
+    </div>
+
+    <div class="pregunta">
+        <h3>10. ¿Cómo se delimitan las sentencias y los bloques de código en Python?</h3>
+        <label><input type="radio" name="p10" value="A"> A. Mediante saltos de línea e indentación.</label>
+        <label><input type="radio" name="p10" value="B"> B. Mediante llaves {} y punto y coma ;</label>
+        <label><input type="radio" name="p10" value="C"> C. Mediante saltos de línea y llaves {}.</label>
+        <label><input type="radio" name="p10" value="D"> D. Mediante punto y coma ; y la indentación.</label>
+    </div>
+
+    <button type="button" onclick="calcularNota()">Enviar respuestas</button>
+</form>
+
+<div id="resultado"></div>
+
+<footer>Creado por <strong>Tu Nombre</strong> · Proyecto Educativo Python 🐍</footer>
+
+<script>
+function calcularNota() {
+    const respuestasCorrectas = {
+        p1: "B", p2: "C", p3: "C", p4: "D", p5: "A",
+        p6: "A", p7: "D", p8: "B", p9: "C", p10: "A"
+    };
+
+    let total = 0, correctas = 0;
+    for (let p in respuestasCorrectas) {
+        total++;
+        const seleccion = document.querySelector(`input[name="${p}"]:checked`);
+        if (seleccion && seleccion.value === respuestasCorrectas[p]) correctas++;
+    }
+
+    const nota = (correctas / total) * 10;
+    const resultado = document.getElementById("resultado");
+    resultado.innerHTML = `Tu nota es: <strong>${nota.toFixed(1)}</strong> / 10<br>` +
+        (nota >= 7 ? "🎉 ¡Excelente trabajo!" :
+         nota >= 5 ? "🙂 Aprobado, pero puedes mejorar." :
+                      "❌ Necesitas repasar los conceptos de Python.");
+}
+</script>
+
+</body>
+</html>
