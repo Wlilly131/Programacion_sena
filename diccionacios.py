@@ -11,6 +11,7 @@
 # Son mutables (se pueden modificar), y muy útiles para representar objetos, registros, etc.
 
 persona = {
+    "ID":1,
     "Nombre":"Carlos",
     "Edad":30,
     "Profesion" : "Ingenierio"
@@ -21,3 +22,5 @@ print("La edad es : ", persona["Edad"])
 print("La profesion es : ", persona["Profesion"])
 persona["Edad"] = 40
 print("Edad persona", persona["Edad"])
+persona["Ciudad"] = "Bogota"
+print(persona["Ciudad"])
