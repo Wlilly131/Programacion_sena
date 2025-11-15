@@ -1,3 +1,4 @@
+#======== CONDICIONALES ========
 print("PROGRAMA DE EVALUACION DE NOTAS")
 nota_alumno=int(input("Ingrese un valor: "))
 
@@ -8,3 +9,14 @@ def evaluación (nota):
     return valoracion
 #si quiero acceder a la variable valoración no podré acceder porque está fuera de su ambito (IF)
 print(evaluación(nota_alumno))
+
+#======== VERIFICACION DE ACCESO ========
+print("Validacion de acceso")
+
+edad_usuario = int(input("Ingrese su edad: "))
+if edad_usuario < 18:
+    print("No puedes pasar")
+elif edad_usuario >100:
+    print("Edad incorrecta")
+else:
+    print("Puedes pasar")
