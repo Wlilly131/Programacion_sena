@@ -61,8 +61,29 @@
 # resultado = (numero >= 10 and numero <= 50) and (numero % 2 == 0)
 # print("¿ El número está entre 10 y 50 y es par ?: ", resultado)
 
-print("17. Descuento: Crea una variable precio, aplica un 20% de descuento usando *= y muestra el nuevo valor.")
+# print("17. Descuento: Crea una variable precio, aplica un 20% de descuento usando *= y muestra el nuevo valor.")
 
-precio = 50000
-precio *= 0.8   
-print("El precio con el 20% de descuento es: ", precio,"prueba")
+# precio = 50000
+# precio *= 0.8   
+# print("El precio con el 20% de descuento es: ", precio,"prueba")
+
+print("19. AND bit a bit: Pide dos números enteros y muestra el resultado de &")
+def main():
+    try:
+        a = int(input("Ingresa el primer número entero: "))
+        b = int(input("Ingresa el segundo número entero: "))
+    except ValueError:
+        print("Error: debes ingresar números enteros válidos.")
+        return
+
+    resultado = a & b
+
+    print(f"\nDecimal: {a} & {b} = {resultado}")
+    print(f"Binario:  {a:>8b} & {b:>8b} = {resultado:>8b}")
+    # alternativa con bin() para ver el prefijo '0b'
+    print(f"bin(a) = {bin(a)}")
+    print(f"bin(b) = {bin(b)}")
+    print(f"bin(resultado) = {bin(resultado)}")
+
+if __name__ == "__main__":
+    main()
