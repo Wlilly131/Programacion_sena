@@ -30,14 +30,14 @@ def inicializar_bd():
 def registrar_usuario():
     print("\n--- 👤 REGISTRO DE NUEVO USUARIO ---")
     try:
-        nuevo_id = input("ID (Solo números): ")
+        nuevo_id = int(input("ID (Solo números): "))
         if not nuevo_id.isdigit():
             print("❌ Error: El ID debe ser un número entero.")
             return
 
         nuevo_nombre = input("Nombre: ")
         nuevo_apellido = input("Apellido: ")
-        nueva_edad = input("Edad (Solo números): ")
+        nueva_edad = int(input("Edad (Solo números): "))
         
         if not nueva_edad.isdigit():
             print("❌ Error: La edad debe ser un número entero.")
